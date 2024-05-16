@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    font-size:4dvh;
+}
+
+.result{
+    background-color: var(--principal-color);
+    color: var(--secondary-color);
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, var(--principal-color) 90.5%, var(--tertiary-color) 92%);
+    padding-top: 0.8rem;
+}
+
+.beer-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 100%;
+    
+}
+
+.result-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+    margin-inline: 15%;
+    gap: 5rem;
+    margin-left: 20%;
+    border: solid 3px var(--secondary-color);
+    border-radius: 25px;
+    height: 25rem;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    gap: 0.8rem;
+}
