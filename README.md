@@ -34,5 +34,4 @@ npm start
 
 ```
 
-# Bonne dégustation ! 
-
+# Bonne dégustation !

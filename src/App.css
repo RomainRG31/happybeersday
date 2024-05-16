@@ -1,8 +1,10 @@
-* {
-    margin: 0;
+@font-face {
+  font-family: principal;
+  src: url(./fonts/JetBrainsMono-Regular.ttf);
 }
-
-.container {
-    height: 100vh;
-    width: 100vw;
+:root {
+  --principal-color: #ffd60a;
+  --secondary-color: #001d3d;
+  --tertiary-color: #fdf8e1;
+  font-family: principal;
 }
