@@ -8,7 +8,7 @@ h1 {
     color: var(--secondary-color);
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(0deg, var(--principal-color) 90.5%, var(--tertiary-color) 92%);
+    background: linear-gradient(0deg, var(--principal-color) 91%, var(--tertiary-color) 92%);
     padding-top: 0.8rem;
 }
 
@@ -22,6 +22,7 @@ h1 {
 }
 
 .result-card {
+    background-color: var(--tertiary-color);
     padding: 1.5rem;
     display: flex;
     flex-direction: row;
@@ -38,5 +39,5 @@ h1 {
     flex-direction: column;
     justify-content: center;
     text-align: justify;
-    gap: 0.8rem;
+    gap: 1rem;
 }

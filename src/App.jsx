@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="container">
-      {/* <header>
+      <header>
         <h1>Welcome to Happy Beers Day!</h1>
       </header>
       <main>
@@ -67,8 +67,7 @@ function App() {
             />
           </div>
         </div>
-      </main> */}
-      <ResultCard />
+      </main>
     </div>
   );
 }
