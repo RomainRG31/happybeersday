@@ -77,7 +77,7 @@ p {
 }
 
 .start-button {
-  background-color: #4caf50;
+  background-color: #0f097a;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -110,10 +110,10 @@ p {
   }
 
   #beer {
-    width: 40vw; /* Smaller width for the beer image */
-    height: 40vw; /* Keep the aspect ratio */
+    width: 30vw; /* Smaller width for the beer image */
+    height: 30vw; /* Keep the aspect ratio */
     border-radius: 50%; /* Make it fully rounded */
     margin-top: 0px; /* Add space between the images */
-    transform: translate(-10%, -100%);
+    transform: translate(-20%, -90%);
   }
 }
