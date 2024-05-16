@@ -1,3 +1,13 @@
+@font-face {
+  font-family: principal;
+  src: url(./fonts/JetBrainsMono-Regular.ttf);
+}
+:root {
+  --principal-color: #ffd60a;
+  --secondary-color: #001d3d;
+  --tertiary-color: #fdf8e1;
+  font-family: principal;
+}
 body {
   background-image: linear-gradient(to top, #d3bd17 70%, #f9f7f7 98%);
   background-size: cover;
