@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import QuestionCard from "./components/QuestionCard";
-import ResultCard from "./components/ResultCard";
+// import QuestionCard from "./components/QuestionCard";
+// import ResultCard from "./components/ResultCard";
 import "./App.css";
 import "./reset.css";
 
@@ -57,7 +57,7 @@ function App() {
           <div className="decoration">
             <img
               id="logo"
-              src="./src/assets/img/logo-happy.png"
+              src="./src/assets/img/logo_hbd.png"
               alt="Logo of Happy Beers Day"
             />
             <img
