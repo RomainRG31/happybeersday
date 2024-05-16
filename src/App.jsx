@@ -57,7 +57,7 @@ function App() {
           <div className="decoration">
             <img
               id="logo"
-              src="./src/assets/img/logo_hbd.png"
+              src="./src/assets/img/logo-happy.png"
               alt="Logo of Happy Beers Day"
             />
             <img
