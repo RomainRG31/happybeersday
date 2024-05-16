@@ -3,8 +3,12 @@
   src: url(./fonts/JetBrainsMono-Regular.ttf);
 }
 :root {
-  --principal-color: #ffd60a;
-  --secondary-color: #001d3d;
+  --principal-color: #ffc300;
+  --secondary-color: #003566;
   --tertiary-color: #fdf8e1;
   font-family: principal;
+  background-image: linear-gradient(
+    to top,
+    var(--principal-color) 70%,
+    #f9f7f7 98%);
 }

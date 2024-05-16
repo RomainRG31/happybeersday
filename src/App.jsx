@@ -4,7 +4,6 @@ import ResultCard from "./components/ResultCard";
 import "./App.css";
 import "./reset.css";
 
-
 function App() {
   useEffect(() => {
     fetchData();
@@ -32,13 +31,12 @@ function App() {
     }
   };
 
-  return <div className="container">
-  <QuestionCard />
-  {/* <ResultCard /> */}
-</div>;
+  return (
+    <div className="container">
+      {/* <QuestionCard /> */}
+      <ResultCard />
+    </div>
+  );
 }
 
 export default App;
-
-
-

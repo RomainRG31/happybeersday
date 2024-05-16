@@ -1,10 +1,15 @@
 h1 {
     text-align: center;
+    font-size:4dvh;
 }
 
 .result{
+    background-color: var(--principal-color);
+    color: var(--secondary-color);
     width: 100vw;
     height: 100vh;
+    background: linear-gradient(0deg, var(--principal-color) 90.5%, var(--tertiary-color) 92%);
+    padding-top: 0.8rem;
 }
 
 .beer {
@@ -13,6 +18,7 @@ h1 {
     justify-content: space-around;
     gap: 2rem;
     width: 100%;
+    
 }
 
 .result-card {
@@ -23,7 +29,7 @@ h1 {
     margin-inline: 15%;
     gap: 5rem;
     margin-left: 20%;
-    border: solid 1px black;
+    border: solid 3px var(--secondary-color);
     border-radius: 25px;
     height: 25rem;
 }
@@ -32,4 +38,5 @@ h1 {
     flex-direction: column;
     justify-content: center;
     text-align: justify;
+    gap: 1rem;
 }
