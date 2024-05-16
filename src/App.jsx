@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import QuestionCard from "./components/QuestionCard";
-import ResultCard from "./components/ResultCard";
+// import QuestionCard from "./components/QuestionCard";
+// import ResultCard from "./components/ResultCard";
 import "./App.css";
 import "./reset.css";
 
@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="container">
-      {/* <header>
+      <header>
         <h1>Welcome to Happy Beers Day!</h1>
       </header>
       <main>
@@ -67,8 +67,8 @@ function App() {
             />
           </div>
         </div>
-      </main> */}
-      <ResultCard />
+      </main>
+      {/* <ResultCard /> */}
     </div>
   );
 }
