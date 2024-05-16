@@ -7,8 +7,111 @@
   --secondary-color: #003566;
   --tertiary-color: #fdf8e1;
   font-family: principal;
-  background-image: linear-gradient(
-    to top,
-    var(--principal-color) 70%,
-    #f9f7f7 98%);
+}
+
+body {
+    background: linear-gradient(0deg, var(--principal-color) 92%, var(--tertiary-color) 94%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
+header h1 {
+  color: #eb0606;
+  text-align: center;
+  padding: 20px;
+  font-size: 4dvh; /* Set the font size here */
+}
+
+main {
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.content-deco {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.content {
+  flex: 1;
+}
+
+.decoration {
+  position: relative;
+  flex: none; /* Do not grow or shrink */
+}
+
+#logo,
+#beer {
+  display: block; /* Ensures the images do not take inline properties */
+  width: 30dvh; /* Adjust according to the design requirements */
+}
+
+#beer {
+  position: absolute;
+  width: 10dvh;
+  height: 10dvh;
+  border-radius: 40%;
+  bottom: 0;
+  left: 0;
+  transform: translate(-20%, 0%); /* Adjust if necessary */
+}
+
+h2,
+h3 {
+  color: #1a1a1a;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.start-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #45a049;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 535px) {
+  .content-deco {
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center-align the items */
+  }
+
+  #logo,
+  #beer {
+    width: 80vw; /* Adjust width to be responsive based on viewport width */
+    position: relative; /* Reset positioning for mobile */
+    transform: none; /* Remove transformation */
+  }
+
+  #beer {
+    width: 40vw; /* Smaller width for the beer image */
+    height: 40vw; /* Keep the aspect ratio */
+    border-radius: 50%; /* Make it fully rounded */
+    margin-top: 0px; /* Add space between the images */
+    transform: translate(-10%, -100%);
+  }
 }

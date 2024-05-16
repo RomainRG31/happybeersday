@@ -12,7 +12,7 @@ h1 {
     padding-top: 0.8rem;
 }
 
-.beer {
+.beer-result {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -38,5 +38,5 @@ h1 {
     flex-direction: column;
     justify-content: center;
     text-align: justify;
-    gap: 1rem;
+    gap: 0.8rem;
 }

@@ -5,7 +5,7 @@ function ResultCard() {
     <div className="result">
       <h1>HappyBeersDay</h1>
       <div className="result-card">
-        <div className="beer">
+        <div className="beer-result">
           <img src="./src/assets/img/logo_hbd.png" alt="logo" />
           <h1>Beer name</h1>
         </div>
