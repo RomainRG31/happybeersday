@@ -1,13 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./QuestionCard.css";
-import { fetcher } from "./fetcher.jsx";
-import { useState, useEffect } from "react";
 
-function QuestionCard1() {
-  const { beer } = fetcher();
-  console.log(beer);
 
+function QuestionCard2() {
   return (
     <>
       <h1>HappyBeersDay</h1>
@@ -28,11 +24,11 @@ function QuestionCard1() {
               <input type="checkbox" />
             </li>
           </ul>
-          <Link to={"/question2"}>Valider</Link>
+          <Link to={"/question3"}>Valider</Link>
         </div>
       </div>
     </>
   );
 }
 
-export default QuestionCard1;
+export default QuestionCard2;

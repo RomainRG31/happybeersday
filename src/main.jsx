@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import QuestionCard from "./components/QuestionCard.jsx";
+import QuestionCard1 from "./components/QuestionCard.jsx";
+import QuestionCard2 from "./components/QuestionCard2.jsx";
+import QuestionCard3 from "./components/QuestionCard3.jsx";
 import ResultCard from "./components/ResultCard.jsx";
 
 const router = createBrowserRouter([
@@ -11,8 +13,16 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/question",
-    element: <QuestionCard />,
+    path: "/question1",
+    element: <QuestionCard1 />,
+  },
+  {
+    path: "/question2",
+    element: <QuestionCard2 />,
+  },
+  {
+    path: "/question3",
+    element: <QuestionCard3 />,
   },
   {
     path: "/result",

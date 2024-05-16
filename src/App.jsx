@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 // import QuestionCard from "./components/QuestionCard";
 // import ResultCard from "./components/ResultCard";
 import "./App.css";
@@ -51,7 +52,9 @@ function App() {
                 The quiz below will help you determine the best beer for your
                 mood:
               </h3>
-              <button className="start-button">Get started!</button>
+              <Link to="/question1" className="start-button">
+                Get started!
+              </Link>
             </section>
           </div>
           <div className="decoration">
