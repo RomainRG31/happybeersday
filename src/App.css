@@ -6,7 +6,9 @@
   --principal-color: #ffc300;
   --secondary-color: #003566;
   --tertiary-color: #fdf8e1;
+  --linear:  background: linear-gradient(135deg, orange 60%, cyan);
   font-family: principal;
+  
 }
 
 body {
