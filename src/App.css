@@ -3,28 +3,32 @@
   src: url(./fonts/JetBrainsMono-Regular.ttf);
 }
 :root {
-  --principal-color: #ffd60a;
-  --secondary-color: #001d3d;
+  --principal-color: #ffc300;
+  --secondary-color: #003566;
   --tertiary-color: #fdf8e1;
   font-family: principal;
 }
+
 body {
-  background-image: linear-gradient(to top, #d3bd17 70%, #f9f7f7 98%);
+  background-image: linear-gradient(
+    to top,
+    var(--principal-color) 70%,
+    #f9f7f7 98%
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .container {
-  font-family: "Arial", sans-serif;
   margin: 0 auto;
   width: 100%;
 }
 
-header {
-  color: #d00707;
+header h1 {
+  color: #eb0606;
   text-align: center;
   padding: 20px;
-  text-size-adjust: 50px;
+  font-size: 4dvh; /* Set the font size here */
 }
 
 main {
