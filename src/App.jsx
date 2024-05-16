@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-// import QuestionCard from "./components/QuestionCard";
-// import ResultCard from "./components/ResultCard";
+import QuestionCard from "./components/QuestionCard";
+import ResultCard from "./components/ResultCard";
 import "./App.css";
 import "./reset.css";
 
