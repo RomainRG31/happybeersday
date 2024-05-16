@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.question-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20rem;
+    width: 30rem;
+    border: solid 1px black;
+    border-radius: 25px;
+}
+
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

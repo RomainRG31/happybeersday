@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+
+.result{
+    width: 100vw;
+    height: 100vh;
+}
+
+.beer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 100%;
+}
+
+.result-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+    margin-inline: 15%;
+    gap: 5rem;
+    margin-left: 20%;
+    border: solid 1px black;
+    border-radius: 25px;
+    height: 25rem;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
