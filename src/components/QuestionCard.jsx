@@ -7,7 +7,7 @@ function QuestionCard() {
       <h1>HappyBeersDay</h1>
       <div className="question">
         <div className="question-card">
-          <h2>question</h2>
+          <h2>Question</h2>
           <ul>
             <li>
               reponse 1
@@ -22,7 +22,7 @@ function QuestionCard() {
               <input type="checkbox" />
             </li>
           </ul>
-          <button>Valider</button>
+          <button className="next-button">Valider</button>
         </div>
       </div>
     </>
