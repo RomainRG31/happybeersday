@@ -29,7 +29,7 @@ function App() {
           <div className="decoration">
             <img
               id="logo"
-              src="./src/assets/img/logo-happy.png"
+              src="/logo-happy.png"
               alt="Logo of Happy Beers Day"
             />
           </div>
