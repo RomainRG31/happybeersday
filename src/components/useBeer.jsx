@@ -5,26 +5,28 @@ function useBeer() {
 
   const beers = [
     {
-      id: "https://api.sampleapis.com/beers/ale",
-      name: "Ale",
+      url: "https://api.sampleapis.com/beers/ale",
+      name: "ale",
     },
     {
-      id: "https://api.sampleapis.com/beers/stouts",
+      url: "https://api.sampleapis.com/beers/stouts",
       name: "stouts",
     },
     {
-      id: "https://api.sampleapis.com/beers/red-ale",
+      url: "https://api.sampleapis.com/beers/red-ale",
       name: "red-ale",
     },
   ];
 
-  async function getBeer() {
-    const beerType = fetch(`https://api.sampleapis.com/beers/ale`)
+  const getBeer = async function fetcher() {
+    let beerType = fetch(`https://api.sampleapis.com/beers/ale`)
       .then((response) => response.json())
       .then((data) => {
-        setBeer(data);
+        console.log(data);
       });
-  }
+    setBeer(beerType);
+    return beerType;
+  };
 
   useEffect(() => {
     getBeer();

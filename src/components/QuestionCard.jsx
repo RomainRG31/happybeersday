@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./QuestionCard.css";
-import { fetcher } from "./fetcher.jsx";
-import { useState, useEffect } from "react";
-
+import useBeer from "./useBeer";
 function QuestionCard1() {
-  const { beer } = fetcher();
+  const { beer } = useBeer();
   console.log(beer);
 
   return (
@@ -16,7 +14,7 @@ function QuestionCard1() {
           <h2>question</h2>
           <ul>
             <li>
-              reponse 1
+              rep1
               <input type="checkbox" />
             </li>
             <li>
