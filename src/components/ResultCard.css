@@ -8,16 +8,15 @@ h1 {
 }
 
 .result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--principal-color);
   color: var(--secondary-color);
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-    0deg,
-    var(--principal-color) 91%,
-    var(--tertiary-color) 92%
-  );
-  padding-top: 0.8rem;
+  background: linear-gradient(0deg, var(--principal-color) 92%, var(--tertiary-color) 94%);
+  padding-top: 0.5rem;
   overflow: hidden; /* Empêche le débordement du contenu */
 }
 
@@ -26,21 +25,23 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   gap: 2rem;
-  width: 100%;
 }
 
 .result-card {
   background-color: var(--tertiary-color);
   padding: 1.5rem;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-direction: row;
   align-items: start; /* Align items from the start */
-  margin-top: 8%;
+  margin-top: 18vh;
   margin-inline: 10%;
   gap: 5rem;
   border: solid 3px var(--secondary-color);
   border-radius: 25px;
   height: auto;
+  max-width: 40rem;
   overflow: auto; /* Ajoute une barre de défilement si nécessaire */
 }
 
@@ -50,6 +51,11 @@ h1 {
   justify-content: center;
   text-align: justify;
   gap: 1rem;
+}
+
+.beer-result img {
+  max-width: 50%;
+  object-fit: cover;
 }
 
 @media (max-width: 600px) {
