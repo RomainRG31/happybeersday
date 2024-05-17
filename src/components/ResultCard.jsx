@@ -1,25 +1,68 @@
+import { useEffect, useState } from "react";
 import "./ResultCard.css";
+import { Link } from "react-router-dom";
 
 function ResultCard() {
+  const [beer, setBeer] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [imageLoading, setImageLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchBeer = async () => {
+      try {
+        const response = await fetch("https://api.sampleapis.com/beers/ale");
+        const beers = await response.json();
+        console.log(beers);
+        if (beers.length > 0) {
+          const randomBeer = beers[Math.floor(Math.random() * beers.length)];
+          setBeer(randomBeer);
+        }
+        setLoading(false);
+      } catch (e) {
+        setError("Failed to fetch beer");
+        setLoading(false);
+      }
+    };
+
+    fetchBeer();
+  }, []);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>{error}</p>;
+  }
+
+  if (!beer) {
+    return <p>No beer found</p>;
+  }
+
   return (
     <div className="result">
-      <h1>HappyBeersDay</h1>
+      <Link to={"/"}>
+        <h1>HappyBeersDay</h1>
+      </Link>
       <div className="result-card">
-        <div className="beer-result">
-          <img src="./src/assets/img/logo_hbd.png" alt="logo" />
-          <h1>Beer name</h1>
-        </div>
+        {beer.image && (
+          <img
+            src={beer.image}
+            alt={beer.name}
+            onLoad={() => setImageLoading(false)}
+            style={{ display: imageLoading ? "none" : "block" }}
+          />
+        )}
+        {imageLoading && <p>Loading image...</p>}
         <div className="description">
-          <h1>Beer description</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            expedita molestiae corporis rem. Dolorem dolore laborum, ea et omnis
-            officia. Id, eos sapiente! Neque nisi beatae, nihil quam eum a? Non
-            dignissimos perferendis provident officiis architecto totam qui
-            incidunt, nesciunt laudantium velit recusandae ipsa rem delectus
-            illo, commodi rerum debitis asperiores impedit consequuntur ab
-            doloremque mollitia quam saepe earum. Nisi.
-          </p>
+          <h1>Votre bière</h1>
+          <p>{beer.name}</p>
+          <p>{beer.price}</p>
+          <p>Nombre d&apos;avis :</p>
+          <p>{beer.rating.reviews}</p>
+          <p>Note :</p>
+          <p>{Math.round(beer.rating.average)} / 5</p>
         </div>
       </div>
     </div>
