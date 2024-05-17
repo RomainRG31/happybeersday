@@ -26,15 +26,15 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   gap: 2rem;
-  width: 100%;
 }
 
 .result-card {
   background-color: var(--tertiary-color);
   padding: 1.5rem;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-direction: row;
-  align-items: start; /* Align items from the start */
   margin-top: 8%;
   margin-inline: 10%;
   gap: 5rem;
@@ -50,6 +50,11 @@ h1 {
   justify-content: center;
   text-align: justify;
   gap: 1rem;
+}
+
+.beer-result img {
+  max-width: 50%;
+  object-fit: cover;
 }
 
 @media (max-width: 600px) {

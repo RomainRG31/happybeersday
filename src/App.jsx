@@ -1,28 +1,8 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-// import QuestionCard from "./components/QuestionCard";
-// import ResultCard from "./components/ResultCard";
 import "./App.css";
 import "./reset.css";
 
 function App() {
-  const [data, setData] = useState([]);
-
-  const fetchData = async () => {
-    const url = "https://api.sampleapis.com/beers/ale";
-    try {
-      const response = await fetch(url);
-      const result = await response.json();
-      setData(result);
-      console.log(result);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   return (
     <div className="container">
       <header>
@@ -62,7 +42,6 @@ function App() {
           </div>
         </div>
       </main>
-      {/* <ResultCard /> */}
     </div>
   );
 }
