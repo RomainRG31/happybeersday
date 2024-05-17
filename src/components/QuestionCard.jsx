@@ -1,11 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./QuestionCard.css";
-import useBeer from "./useBeer";
 function QuestionCard1() {
-  const { beer } = useBeer();
-  console.log(beer);
-
   return (
     <>
       <h1>HappyBeersDay</h1>

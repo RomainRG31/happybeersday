@@ -1,15 +1,26 @@
 h1 {
   text-align: center;
+  font-size: 4dvh;
+  margin-top: 1VW;
+}
+
+h2 {
+  color: var(--secondary-color);
+}
+
+body{
+  color: var(--secondary-color);
 }
 
 .question {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-top: 10%;
+  padding-top: 20%;
+  height: 100vh;
 }
 
 .question-card {
+  background-color: var(--tertiary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -43,3 +54,16 @@ ul {
   flex-direction: row;
   gap: 20px;
 }
+
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    margin-inline: 5%;
+    padding: 1rem;
+    gap: 1rem;
+  }}
+
+  .question-card{
+    margin-inline: 5%;
+
+  }
