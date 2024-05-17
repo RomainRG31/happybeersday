@@ -18,7 +18,7 @@ function QuestionCard6() {
               <input type="radio" />
             </li>
             <li>
-              seriously don't drink and drive
+              Seriously don&apos;t drink and drive
               <input type="radio" />
             </li>
           </ul>
