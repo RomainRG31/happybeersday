@@ -4,8 +4,8 @@ import "./QuestionCard.css";
 function QuestionCard1() {
   return (
     <>
-      <h1>HappyBeersDay</h1>
       <div className="question">
+        <h1>HappyBeersDay</h1>
         <div className="question-card">
           <h2>How do you feel today?</h2>
           <ul>
@@ -22,7 +22,7 @@ function QuestionCard1() {
               <input type="radio" name="question" />
             </li>
           </ul>
-          <Link to={"/question2"}>Valider</Link>
+          <Link to={"/question2"}>Next</Link>
         </div>
       </div>
     </>

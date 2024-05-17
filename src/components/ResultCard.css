@@ -8,16 +8,15 @@ h1 {
 }
 
 .result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--principal-color);
   color: var(--secondary-color);
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-    0deg,
-    var(--principal-color) 91%,
-    var(--tertiary-color) 92%
-  );
-  padding-top: 0.8rem;
+  background: linear-gradient(0deg, var(--principal-color) 92%, var(--tertiary-color) 94%);
+  padding-top: 0.5rem;
   overflow: hidden; /* Empêche le débordement du contenu */
 }
 
@@ -35,12 +34,13 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: start; /* Align items from the start */
-  margin-top: 8%;
+  margin-top: 18vh;
   margin-inline: 10%;
   gap: 5rem;
   border: solid 3px var(--secondary-color);
   border-radius: 25px;
   height: auto;
+  max-width: 40rem;
   overflow: auto; /* Ajoute une barre de défilement si nécessaire */
 }
 
