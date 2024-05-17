@@ -1,24 +1,25 @@
 import { Link } from "react-router-dom";
 import "./QuestionCard.css";
+
 function QuestionCard1() {
   return (
     <>
       <h1>HappyBeersDay</h1>
       <div className="question">
         <div className="question-card">
-          <h2>Question</h2>
+          <h2>How do you feel today?</h2>
           <ul>
             <li>
-              rep1
-              <input type="checkbox" />
+              Happy like a beer
+              <input type="radio" name="question" />
             </li>
             <li>
-              reponse 2
-              <input type="checkbox" />
+              Sad like a alcohol free beer
+              <input type="radio" name="question" />
             </li>
             <li>
-              reponse 3
-              <input type="checkbox" />
+              I feel lost like a peanuts without beer
+              <input type="radio" name="question" />
             </li>
           </ul>
           <Link to={"/question2"}>Valider</Link>
