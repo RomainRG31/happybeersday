@@ -11,7 +11,7 @@ function QuestionCard1() {
       <h1>HappyBeersDay</h1>
       <div className="question">
         <div className="question-card">
-          <h2>question</h2>
+          <h2>Question</h2>
           <ul>
             <li>
               rep1
