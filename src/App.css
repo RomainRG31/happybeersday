@@ -1,42 +1,137 @@
-#root {
-  max-width: 1280px;
+@font-face {
+  font-family: principal;
+  src: url(./fonts/JetBrainsMono-Regular.ttf);
+}
+:root {
+  --principal-color: #ffc300;
+  --secondary-color: #003566;
+  --tertiary-color: #fdf8e1;
+  --linear:  background: linear-gradient(135deg, orange 60%, cyan);
+  font-family: principal;
+  
+}
+h1{
+  cursor: pointer;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1em;
+
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  &:visited{
+    color: inherit;
+  }
+}
+
+
+body {
+    background: linear-gradient(0deg, var(--principal-color) 92%, var(--tertiary-color) 94%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
   margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  height: 100vh;
+}
+
+header h1 {
+  color: var(--secondary-color);
   text-align: center;
+  padding: 10px;
+  font-size: 4dvh; 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.content-deco {
+  padding: 4.5rem 0 4.5rem 4.5rem;
+  margin-top: 10dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+p{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+;}
+
+h2{
+  font-size: 6dvh;
+  margin-top: 2rem;
+}
+
+.h2{
+  font-size: 12dvh;
+  margin-top: 2rem;
+  line-height: 0.9em;
+}
+
+h3{
+  font-size: 2dvh;
+  margin-top: 2rem;
+}
+.quiz-intro {
+
+  margin-top: 5rem;
+
+}
+
+.decoration {
+  position: relative;
+  flex: none; /* Do not grow or shrink */
+}
+
+h2,
+h3 {
+  color: #1a1a1a;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.start-button {
+  background-color:var(--secondary-color);
+  color: var(--principal-color) !important;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover{
+  color: var(--secondary-color) !important;
+  background-color: var(--principal-color);
+}
+
+@media (max-width: 535px) {
+  .content-deco {
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center-align the items */
   }
-  to {
-    transform: rotate(360deg);
+
+  #logo
+   {
+    width: 80vw; /* Adjust width to be responsive based on viewport width */
+    position: relative; /* Reset positioning for mobile */
+    transform: none; /* Remove transformation */
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  
 }

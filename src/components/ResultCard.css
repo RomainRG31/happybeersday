@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box; /* S'assure que padding et border sont inclus dans la width/height */
+}
+
+h1 {
+  text-align: center;
+  font-size: 4vh;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--principal-color);
+  color: var(--secondary-color);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    var(--principal-color) 92%,
+    var(--tertiary-color) 94%
+  );
+  padding-top: 0.5rem;
+  overflow: hidden; /* Empêche le débordement du contenu */
+}
+
+.beer-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.result-card {
+  background-color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 18vh;
+  margin-inline: 10%;
+  gap: 5rem;
+  border: solid 3px var(--secondary-color);
+  border-radius: 25px;
+  height: auto;
+  max-width: 40rem;
+  overflow: auto; /* Ajoute une barre de défilement si nécessaire */
+  & img {
+    width: 10em;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  gap: 1rem;
+}
+
+.beer-result img {
+  max-width: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .result-card {
+    flex-direction: column;
+    margin-inline: 5%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .beer-result,
+  .description {
+    width: 100%; /* Full width for small devices */
+  }
+}
