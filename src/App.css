@@ -24,10 +24,10 @@ body {
 }
 
 header h1 {
-  color: #eb0606;
+  color: var(--secondary-color);
   text-align: center;
   padding: 20px;
-  font-size: 4dvh; /* Set the font size here */
+  font-size: 4dvh; 
 }
 
 main {
@@ -36,13 +36,32 @@ main {
 }
 
 .content-deco {
+  padding: 6rem;
+  margin-top: 10dvh;
   display: flex;
-  justify-content: start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
-.content {
-  flex: 1;
+p{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+;}
+
+h2{
+  font-size: 3dvh;
+  margin-top: 2rem;
+ 
+}
+
+h3{
+  font-size: 2dvh;
+  margin-top: 2rem;
+}
+.quiz-intro {
+
+  margin-top: 5rem;
+
 }
 
 .decoration {
@@ -50,21 +69,13 @@ main {
   flex: none; /* Do not grow or shrink */
 }
 
-#logo,
-#beer {
+#logo {
   display: block; /* Ensures the images do not take inline properties */
-  width: 30dvh; /* Adjust according to the design requirements */
+  width: 50dvh; /* Adjust according to the design requirements */
 }
 
-#beer {
-  position: absolute;
-  width: 10dvh;
-  height: 10dvh;
-  border-radius: 40%;
-  bottom: 0;
-  left: 0;
-  transform: translate(-20%, 0%); /* Adjust if necessary */
-}
+
+
 
 h2,
 h3 {
@@ -77,7 +88,7 @@ p {
 }
 
 .start-button {
-  background-color: #097a0f;
+  background-color:var(--secondary-color);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -89,31 +100,26 @@ p {
   cursor: pointer;
   border-radius: 12px;
   transition: background-color 0.3s ease;
+
 }
 
 .start-button:hover {
   background-color: #45a049;
 }
 
-/* Media Query for Mobile Devices */
+
 @media (max-width: 535px) {
   .content-deco {
     flex-direction: column; /* Stack the content vertically */
     align-items: center; /* Center-align the items */
   }
 
-  #logo,
-  #beer {
+  #logo
+   {
     width: 80vw; /* Adjust width to be responsive based on viewport width */
     position: relative; /* Reset positioning for mobile */
     transform: none; /* Remove transformation */
   }
 
-  #beer {
-    width: 30vw; /* Smaller width for the beer image */
-    height: 30vw; /* Keep the aspect ratio */
-    border-radius: 50%; /* Make it fully rounded */
-    margin-top: 0px; /* Add space between the images */
-    transform: translate(-20%, -90%);
-  }
+  
 }

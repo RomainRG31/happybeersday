@@ -41,7 +41,7 @@ function App() {
         <div className="content-deco">
           <div className="content">
             <section className="intro">
-              <h2>How to get a beer that suits your mood?</h2>
+              <h2>Get the beer that suits you!</h2>
               <p>
                 Our goal is to recommend a beer suited to your needs from all
                 over the world and without any fuss, quickly to delight you.
@@ -62,11 +62,6 @@ function App() {
               id="logo"
               src="./src/assets/img/logo-happy.png"
               alt="Logo of Happy Beers Day"
-            />
-            <img
-              id="beer"
-              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzY2eXFqOXlpcWk5YmhtaWExdHU2MHhlaTNrZmtqOHVoYTBibG81eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUA7bijsxNm6iMh39e/giphy.gif"
-              alt="Animated beer illustration"
             />
           </div>
         </div>
