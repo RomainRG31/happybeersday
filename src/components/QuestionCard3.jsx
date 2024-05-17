@@ -7,22 +7,22 @@ function QuestionCard3() {
       <h1>HappyBeersDay</h1>
       <div className="question">
         <div className="question-card">
-          <h2>question</h2>
+          <h2>How is the weather today?</h2>
           <ul>
             <li>
-              reponse 1
-              <input type="checkbox" />
+              Shinny
+              <input type="radio" name="question3" />
             </li>
             <li>
-              reponse 2
-              <input type="checkbox" />
+              Cloudy
+              <input type="radio" name="question3" />
             </li>
             <li>
-              reponse 3
-              <input type="checkbox" />
+              I will not open my windows today
+              <input type="radio" name="question3" />
             </li>
           </ul>
-          <Link to={"/result"}>Valider</Link>
+          <Link to={"/question4"}>Valider</Link>
         </div>
       </div>
     </>
