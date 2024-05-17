@@ -1,20 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./QuestionCard.css";
-import useBeer from "./useBeer";
-function QuestionCard1() {
-  const { beer } = useBeer();
-  console.log(beer);
 
+
+function QuestionCard2() {
   return (
     <>
       <h1>HappyBeersDay</h1>
       <div className="question">
         <div className="question-card">
-          <h2>Question</h2>
+          <h2>question</h2>
           <ul>
             <li>
-              rep1
+              reponse 1
               <input type="checkbox" />
             </li>
             <li>
@@ -26,11 +24,11 @@ function QuestionCard1() {
               <input type="checkbox" />
             </li>
           </ul>
-          <Link to={"/question2"}>Valider</Link>
+          <Link to={"/question3"}>Valider</Link>
         </div>
       </div>
     </>
   );
 }
 
-export default QuestionCard1;
+export default QuestionCard2;
