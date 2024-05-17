@@ -13,22 +13,18 @@ function App() {
       <main>
         <div className="content-deco">
           <div className="content">
-            <section className="intro">
-              <h2>Get the beer that suits you!</h2>
-              <p>
-                Our goal is to recommend a beer suited to your needs from all
-                over the world and without any fuss, quickly to delight you.
-              </p>
-            </section>
-            <section className="quiz-intro">
-              <h3>
-                The quiz below will help you determine the best beer for your
-                mood:
-              </h3>
-              <Link to="/question1" className="start-button">
-                Get started!
-              </Link>
-            </section>
+            <h2 className="h2">Get the beer that suits you!</h2>
+            <p>
+              Our goal is to recommend a beer suited to your needs from all over
+              the world and without any fuss, quickly to delight you.
+            </p>
+            <h3>
+              The quiz below will help you determine the best beer for your
+              mood:
+            </h3>
+            <Link to="/question1" className="start-button">
+              Get started!
+            </Link>
           </div>
           <div className="decoration">
             <img

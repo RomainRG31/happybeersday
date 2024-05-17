@@ -56,12 +56,12 @@ function ResultCard() {
         )}
         {imageLoading && <p>Loading image...</p>}
         <div className="description">
-          <h1>Votre bière</h1>
+          <h1>Your beer</h1>
           <p>{beer.name}</p>
           <p>{beer.price}</p>
-          <p>Nombre d&apos;avis :</p>
+          <p>Reviews :</p>
           <p>{beer.rating.reviews}</p>
-          <p>Note :</p>
+          <p>Average :</p>
           <p>{Math.round(beer.rating.average)} / 5</p>
         </div>
       </div>

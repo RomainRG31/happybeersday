@@ -5,9 +5,10 @@ h1 {
 
 h2 {
   color: var(--secondary-color);
+  font-size: 3.5dvh;
 }
 
-body{
+body {
   color: var(--secondary-color);
   text-align: center;
 }
@@ -33,20 +34,17 @@ body{
   border-radius: 25px;
 }
 
-a{
+a {
   text-decoration: none;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   font-size: 1.5rem;
   border: solid var(--primary-color) 1px;
   border-radius: 25px;
-
 }
 
-a:visited{
+a:visited {
   color: inherit;
 }
-
-
 
 .next-button {
   background-color: #08a623;
@@ -76,7 +74,7 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap : 1.5em;
+  gap: 1.5em;
 }
 
 @media (max-width: 600px) {
@@ -85,9 +83,9 @@ ul li {
     margin-inline: 5%;
     padding: 1rem;
     gap: 1rem;
-  }}
-
-  .question-card{
-    margin-inline: 5%;
-
   }
+}
+
+.question-card {
+  margin-inline: 5%;
+}

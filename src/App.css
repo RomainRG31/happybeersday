@@ -14,6 +14,15 @@ h1{
   cursor: pointer;
 }
 
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1em;
+
+}
+
 a{
   text-decoration: none;
   cursor: pointer;
@@ -38,17 +47,12 @@ body {
 header h1 {
   color: var(--secondary-color);
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   font-size: 4dvh; 
 }
 
-main {
-  padding: 20px;
-  border-radius: 15px;
-}
-
 .content-deco {
-  padding: 6rem;
+  padding: 4.5rem 0 4.5rem 4.5rem;
   margin-top: 10dvh;
   display: flex;
   justify-content: center;
@@ -61,9 +65,14 @@ p{
 ;}
 
 h2{
-  font-size: 3dvh;
+  font-size: 6dvh;
   margin-top: 2rem;
- 
+}
+
+.h2{
+  font-size: 12dvh;
+  margin-top: 2rem;
+  line-height: 0.9em;
 }
 
 h3{
@@ -81,14 +90,6 @@ h3{
   flex: none; /* Do not grow or shrink */
 }
 
-#logo {
-  display: block; /* Ensures the images do not take inline properties */
-  width: 50dvh; /* Adjust according to the design requirements */
-}
-
-
-
-
 h2,
 h3 {
   color: #1a1a1a;
@@ -101,7 +102,7 @@ p {
 
 .start-button {
   background-color:var(--secondary-color);
-  color: white;
+  color: var(--principal-color) !important;
   border: none;
   padding: 10px 20px;
   text-align: center;
@@ -112,13 +113,12 @@ p {
   cursor: pointer;
   border-radius: 12px;
   transition: background-color 0.3s ease;
-
 }
 
-.start-button:hover {
-  background-color: #45a049;
+.start-button:hover{
+  color: var(--secondary-color) !important;
+  background-color: var(--principal-color);
 }
-
 
 @media (max-width: 535px) {
   .content-deco {
