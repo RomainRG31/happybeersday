@@ -6,24 +6,12 @@ import "./App.css";
 import "./reset.css";
 
 function App() {
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
-    const url = "https://beers-list.p.rapidapi.com/beers";
-    const options = {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": import.meta.env.VITE_MY_API_KEY,
-        "X-RapidAPI-Host": "beers-list.p.rapidapi.com",
-      },
-    };
-
+    const url = "https://api.sampleapis.com/beers/ale";
     try {
-      const response = await fetch(url, options);
+      const response = await fetch(url);
       const result = await response.json();
       setData(result);
       console.log(result);
@@ -31,6 +19,9 @@ function App() {
       console.error(error);
     }
   };
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <div className="container">

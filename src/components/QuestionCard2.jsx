@@ -1,7 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./QuestionCard.css";
-
 
 function QuestionCard2() {
   return (
