@@ -36,8 +36,6 @@ body {
 }
 
 header h1 {
-  color: #eb0606;
-  cursor: pointer;
   text-align: center;
   padding: 20px;
   font-size: 4dvh; /* Set the font size here */
@@ -77,11 +75,6 @@ main {
   bottom: 0;
   left: 0;
   transform: translate(-20%, 0%); /* Adjust if necessary */
-}
-
-h2,
-h3 {
-  color: #1a1a1a;
 }
 
 p {

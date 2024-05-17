@@ -1,24 +1,52 @@
 h1 {
   text-align: center;
+  font-size: 4dvh;
+}
+
+h2 {
+  color: var(--secondary-color);
+}
+
+body{
+  color: var(--secondary-color);
+  text-align: center;
 }
 
 .question {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding-top: 10%;
+  height: 100vh;
+  padding-top: 0.5rem;
+  gap: 7rem;
 }
 
 .question-card {
+  background-color: var(--tertiary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 20rem;
-  width: 30rem;
-  border: solid 1px var(--secondary-color);
+  height: 30rem;
+  width: 40rem;
+  border: solid 2px var(--secondary-color);
   border-radius: 25px;
 }
+
+a{
+  text-decoration: none;
+  color: var(--tertiary-color);
+  font-size: 1.5rem;
+  border: solid var(--primary-color) 1px;
+  border-radius: 25px;
+
+}
+
+a:visited{
+  color: inherit;
+}
+
+
 
 .next-button {
   background-color: #08a623;
@@ -39,7 +67,27 @@ h1 {
   background-color: #45a049;
 }
 ul {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
+
+ul li {
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap : 1.5em;
+}
+
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    margin-inline: 5%;
+    padding: 1rem;
+    gap: 1rem;
+  }}
+
+  .question-card{
+    margin-inline: 5%;
+
+  }
