@@ -1,7 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./QuestionCard.css";
-
 
 function QuestionCard2() {
   return (
@@ -9,19 +7,19 @@ function QuestionCard2() {
       <h1>HappyBeersDay</h1>
       <div className="question">
         <div className="question-card">
-          <h2>question</h2>
+          <h2>What is your profession?</h2>
           <ul>
             <li>
-              reponse 1
-              <input type="checkbox" />
+              Office job
+              <input type="radio" name="question2" />
             </li>
             <li>
-              reponse 2
-              <input type="checkbox" />
+              Field job
+              <input type="radio" name="question2" />
             </li>
             <li>
-              reponse 3
-              <input type="checkbox" />
+              AAUGH AAUGH AAUGH!
+              <input type="radio" name="question2" />
             </li>
           </ul>
           <Link to={"/question3"}>Valider</Link>
