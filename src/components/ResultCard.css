@@ -1,43 +1,67 @@
-h1 {
-    text-align: center;
-    font-size:4dvh;
+* {
+  box-sizing: border-box; /* S'assure que padding et border sont inclus dans la width/height */
 }
 
-.result{
-    background-color: var(--principal-color);
-    color: var(--secondary-color);
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(0deg, var(--principal-color) 91%, var(--tertiary-color) 92%);
-    padding-top: 0.8rem;
+h1 {
+  text-align: center;
+  font-size: 4vh;
+}
+
+.result {
+  background-color: var(--principal-color);
+  color: var(--secondary-color);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    var(--principal-color) 91%,
+    var(--tertiary-color) 92%
+  );
+  padding-top: 0.8rem;
+  overflow: hidden; /* Empêche le débordement du contenu */
 }
 
 .beer-result {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 2rem;
-    width: 100%;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 100%;
 }
 
 .result-card {
-    background-color: var(--tertiary-color);
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    margin-top: 8%;
-    margin-inline: 15%;
-    gap: 5rem;
-    margin-left: 20%;
-    border: solid 3px var(--secondary-color);
-    border-radius: 25px;
-    height: 25rem;
+  background-color: var(--tertiary-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: start; /* Align items from the start */
+  margin-top: 8%;
+  margin-inline: 10%;
+  gap: 5rem;
+  border: solid 3px var(--secondary-color);
+  border-radius: 25px;
+  height: auto;
+  overflow: auto; /* Ajoute une barre de défilement si nécessaire */
 }
+
 .description {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .result-card {
     flex-direction: column;
-    justify-content: center;
-    text-align: justify;
+    margin-inline: 5%;
+    padding: 1rem;
     gap: 1rem;
+  }
+
+  .beer-result,
+  .description {
+    width: 100%; /* Full width for small devices */
+  }
 }
