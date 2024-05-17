@@ -10,6 +10,18 @@
   font-family: principal;
   
 }
+h1{
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  &:visited{
+    color: inherit;
+  }
+}
+
 
 body {
     background: linear-gradient(0deg, var(--principal-color) 92%, var(--tertiary-color) 94%);

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./QuestionCard.css";
-
 function QuestionCard1() {
   return (
     <>
