@@ -1,4 +1,4 @@
-# HappyBeersDay
+# HappyBeersDay 🍺
 
 Bienvenue sur le dépôt officiel de HappyBeersDay, l'application dédiée à tous les amateurs de bière ! Avec HappyBeersDay, chaque jour est une occasion de découvrir et de célébrer les bières du monde entier.
 
@@ -9,6 +9,7 @@ HappyBeersDay permet aux utilisateurs de découvrir des bières uniques, d'appre
 ## Fonctionnalités
 
 - **Découverte de bières** : Explorez une base de données riche de bières du monde entier.
+- **Informations détaillées** : Obtenez des détails sur l'origine, les ingrédients et le processus de fabrication de chaque bière.
 
 ## Technologies Utilisées
 
@@ -24,7 +25,7 @@ Pour installer et lancer HappyBeersDay localement, suivez ces étapes :
 git clone https://github.com/votreUsername/happybeersday.git
 
 # Aller dans le dossier de l'application
-cd HappyBeersDay
+cd happybeersday
 
 # Installer les dépendances
 npm install
@@ -34,4 +35,4 @@ npm start
 
 ```
 
-# Bonne dégustation !
+# Bonne dégustation ! 🍺
