@@ -1,6 +1,6 @@
 # HappyBeersDay 🍺
 
-Bienvenue sur le dépôt officiel de HappyBeersDay, l'application dédiée à tous les amateurs de bière ! Avec HappyBeersDay, chaque jour est une occasion de découvrir et de célébrer les bières du monde entier.
+Bienvenue sur le dépôt officiel de HappyBeersDay, l'application dédiée à tous les amateurs de bière, développée en moins de 48 heures lors d'un protojam, un hackathon intégré à ma formation de développeur à la Wild Code School. Avec HappyBeersDay, chaque jour est une occasion de découvrir et de célébrer les bières du monde entier.
 
 ## Présentation
 
